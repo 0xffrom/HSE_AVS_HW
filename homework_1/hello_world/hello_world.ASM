@@ -1,9 +1,10 @@
 format PE console
 
+;
 entry start
 
 
-include '..\INCLUDE\win32a.inc'
+include '..\..\INCLUDE\win32a.inc'
 
 section '.data' data readable writable
 
