@@ -1,6 +1,10 @@
 format PE console
 
-;
+; Romanyuk Andrey BSE-194
+; HOMEWORK #1
+; ==== Hello World ====
+; Example: Hello World!
+
 entry start
 
 

@@ -1,4 +1,14 @@
 format PE console
+
+; Romanyuk Andrey BSE-194
+; HOMEWORK #1
+; ==== Mini-dialog ====
+; Example:
+; What is your name? My name is: Andew
+; How old are you? I am 19
+; Hello, Andrew. You age is 19.
+
+
 entry start
 
 include '..\..\INCLUDE\win32a.inc'
@@ -12,7 +22,7 @@ section '.data' data readable writable
         age rd 1
 
         firstQuestion db 'What is your name? My name is: ', 0
-        secondQuestion db 'How old are you? I am: ', 0
+        secondQuestion db 'How old are you? I am ', 0
         hello db 'Hello, %s. Your age is %d.',0
 
         NULL = 0
