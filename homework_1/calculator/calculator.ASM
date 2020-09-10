@@ -92,15 +92,21 @@ section '.code' code readable executable
                 jmp Exit
 
                 ;// CALCULATE START\\
-                mov ecx, [A]
+                mov eax, 0
+                mov ecx, 0
+
+
 
                 plus:
+                        mov ecx, [A]
                         add ecx, [B]
                         jmp SuccessMessage
                 subtraction:
+                        mov ecx, [A]
                         sub ecx, [B]
                         jmp SuccessMessage
                 multiplication:
+                        mov ecx, [A]
                         imul ecx, [B]
                         jmp SuccessMessage
                 division:
