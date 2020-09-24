@@ -169,7 +169,9 @@ FillArrayA:
                 mov eax, [arrayA]
                 add eax, ecx
                 mov ecx, [eax]
+
                 cinvoke scanf, digit, eax
+
                 mov ecx, [i]
                 imul ecx, dword 4
                 mov eax, [arrayA]
