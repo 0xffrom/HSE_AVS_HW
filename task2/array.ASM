@@ -9,6 +9,8 @@ entry start
 ; Desctiption: input array A with keyboard
 ;              and select only positive numbers
 ;              and put it in array B
+;
+; Examples and more information on README.md
 ; =============================================
 
 include '../../INCLUDE/win32a.inc'
@@ -46,9 +48,9 @@ section '.data' data readable writable
         N               dd      ?
 ;       Count of output array (B) with rule (only positive numbers)
         M               dd      0
-;       min and max values of input array's length
-        minValue        =      1
-        maxValue        =      100
+;       Min and max values of input array's length
+        minValue        dd      1
+        maxValue        dd      100
         NULL = 0
                 
 section '.code' code readable executable
@@ -83,11 +85,11 @@ InputData:
          cinvoke printf, strInputN, [minValue], [maxValue]
 ;        Input N:
          cinvoke scanf, digit, N
-         mov ecx, minValue
+         mov ecx, [minValue]
          cmp ecx, [N]
          jg invalidData
 
-         mov ecx, maxValue
+         mov ecx, [maxValue]
          cmp ecx, [N]
          jl invalidData
          ret 0
