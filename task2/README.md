@@ -2,7 +2,7 @@
 # Домашняя работа №2
 </h1>
 <h2 style="text-align: right">Романюк Андрей БПИ-194.</h2>
-<h2 style="text-align: right">Номер в списке: 1.</h2>
+<h2 style="text-align: right">Номер в списке: 21.</h2>
 <h2 style="text-align: right">Вариант: 1.</h2>
 <font size="3"> 
 
@@ -30,4 +30,12 @@
 ![Image](screenshots/6.png)
 
 > Очистка памяти c помощью HeapFree.<br>![Image](screenshots/7.png)
+
+> Весь код программы разделён на подпрограммы. Примеры: <br> ![Image](screenshots/12.png) ![Image](screenshots/13.png)
+
+<h2 style="text-align: center"> Примеры </h2>
+
+![Image](screenshots/11.png)
+![Image](screenshots/9.png)
+![Image](screenshots/15.png)
 </font>
