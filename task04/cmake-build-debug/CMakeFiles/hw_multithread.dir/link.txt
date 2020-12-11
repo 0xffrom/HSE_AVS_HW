@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\hw_multithread.dir/objects.a
+C:\MinGw\bin\ar.exe cr CMakeFiles\hw_multithread.dir/objects.a @CMakeFiles\hw_multithread.dir\objects1.rsp
+C:\MinGw\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\hw_multithread.dir/objects.a -Wl,--no-whole-archive  -o hw_multithread.exe -Wl,--out-implib,libhw_multithread.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\hw_multithread.dir\linklibs.rsp
